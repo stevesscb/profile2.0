@@ -1,0 +1,25 @@
+.MainNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Noto Sans Tangsa', sans-serif;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(134, 134, 139, 0.4);
+
+  h1,
+  h2 {
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    margin-bottom: 2px;
+
+    li {
+      display: inline;
+      margin: 5px;
+    }
+  }
+}

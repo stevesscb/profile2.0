@@ -6,5 +6,5 @@ module.exports = {
     title: `profile`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
+};
