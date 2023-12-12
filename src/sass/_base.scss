@@ -1,0 +1,39 @@
+// Main styles eg color pallette, * / html / body etc
+
+// COLOR VARIABLES
+$color-primary: #f25f24;
+
+$color-secondary: #1f1f1f;
+
+$color-light-1: #fff;
+$color-light-2: #f9f7f6;
+
+// FONT VARIABLES
+$font-heading: 'Roboto Slab', sans-serif;
+$font-content: 'Roboto', sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  background-image: linear-gradient(
+      rgba($color-light-2, 0.7),
+      rgba($color-light-2, 0.7)
+    ),
+    url(../images/main-background.jpg);
+  background-size: cover;
+
+  font-family: $font-content;
+  color: $color-secondary;
+  font-weight: 400;
+}
