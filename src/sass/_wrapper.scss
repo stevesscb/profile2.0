@@ -1,0 +1,14 @@
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: min-content 35vh 35vh min-content 100vh min-content;
+  // grid-template-columns:
+  //   [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+  //   [center-end];
+}
