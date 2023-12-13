@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-image: linear-gradient(rgba(249, 247, 246, 0.8), rgba(249, 247, 246, 0.8)), url(../images/main-background.jpg);
+  background-image: linear-gradient(rgba(249, 247, 246, 0.9), rgba(249, 247, 246, 0.9)), url(../images/main-background.jpg);
   background-size: cover;
   font-family: "Roboto", sans-serif;
   color: #1f1f1f;
@@ -21,8 +21,10 @@ body {
   grid-row: 2 / 4;
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
-  padding: 2rem;
-  overflow: hidden; }
+  padding-top: 3rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: max-content repeat(3, max-content); }
   .header__title {
     text-align: center;
     z-index: 100; }
@@ -50,8 +52,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%); }
+    z-index: -2;
+    transform: translate(-50%, -55%);
+    opacity: 0.7; }
 
 .navbar {
   background-color: #1f1f1f;
@@ -73,4 +76,37 @@ body {
   padding-left: 1rem;
   overflow: hidden;
   display: grid;
-  grid-template-rows: min-content 35vh 35vh min-content 100vh min-content; }
+  grid-template-rows: auto max-content repeat(3, auto); }
+
+.header__scrolling {
+  border-top: 2px solid #1f1f1f;
+  padding: 1rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 2s ease; }
+  .header__scrolling:last-child {
+    border-bottom: 2px solid #1f1f1f; }
+  .header__scrolling--text {
+    display: inline-block;
+    font-family: "Anton", sans-serif;
+    font-size: 6rem; }
+    .header__scrolling--text-1 {
+      color: transparent;
+      -webkit-text-stroke-width: 1.8px;
+      -webkit-text-stroke-color: #1f1f1f;
+      animation: animate_text-1 30s linear infinite; }
+    .header__scrolling--text-2 {
+      animation: animate_text-2 30s linear infinite; }
+
+@keyframes animate_text-1 {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes animate_text-2 {
+  from {
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }

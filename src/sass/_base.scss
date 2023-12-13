@@ -9,6 +9,7 @@ $color-light-2: #f9f7f6;
 // FONT VARIABLES
 $font-heading: 'Roboto Slab', sans-serif;
 $font-content: 'Roboto', sans-serif;
+$font-content-secondary: 'Anton', sans-serif;
 
 *,
 *::before,
@@ -25,8 +26,8 @@ html {
 
 body {
   background-image: linear-gradient(
-      rgba($color-light-2, 0.8),
-      rgba($color-light-2, 0.8)
+      rgba($color-light-2, 0.9),
+      rgba($color-light-2, 0.9)
     ),
     url(../images/main-background.jpg);
   background-size: cover;

@@ -3,8 +3,11 @@
   grid-row: 2 / 4;
   font-family: $font-heading;
   text-transform: uppercase;
-  padding: 2rem;
+  padding-top: 3rem;
   overflow: hidden;
+
+  display: grid;
+  grid-template-rows: max-content repeat(3, max-content);
 
   &__title {
     text-align: center;
@@ -44,10 +47,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
+    z-index: -2;
+    transform: translate(-50%, -55%);
+    opacity: 0.7;
   }
-
-  // &__animation__text {
-  // }
 }

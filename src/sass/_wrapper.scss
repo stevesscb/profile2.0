@@ -7,8 +7,5 @@
   overflow: hidden;
 
   display: grid;
-  grid-template-rows: min-content 35vh 35vh min-content 100vh min-content;
-  // grid-template-columns:
-  //   [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-  //   [center-end];
+  grid-template-rows: auto max-content repeat(3, auto);
 }
