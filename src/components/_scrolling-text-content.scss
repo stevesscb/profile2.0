@@ -1,0 +1,38 @@
+.header__scrolling--content {
+  .icon {
+    margin: 0 1rem;
+  }
+
+  &-1 {
+    color: transparent;
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: $color-secondary;
+    animation: animate_text-1 30s linear infinite;
+  }
+
+  &-2 {
+    animation: animate_text-2 30s linear infinite;
+
+    .icon {
+      color: $color-primary;
+    }
+  }
+}
+
+@keyframes animate_text-1 {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes animate_text-2 {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

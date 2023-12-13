@@ -1,10 +1,11 @@
 // import all scss files into this file then compile into css/style.css
 
-// COMPONENTS
-@import '../components/scrollingtext';
-
 // SECTIONS
 @import 'base';
 @import 'header';
 @import 'navbar';
 @import 'wrapper';
+
+// COMPONENTS
+@import '../components/scrolling-text-banner';
+@import '../components/scrolling-text-content';
