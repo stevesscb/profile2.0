@@ -1,8 +1,10 @@
 import * as React from 'react';
 
-import ScrollingText from '../components/scrollingText';
+import ScrollingTextBanner from '../components/Scrolling-text-banner';
 
 function Header() {
+  console.log('header');
+
   return (
     <div className='header'>
       <h1 className='header__title'>
@@ -12,19 +14,22 @@ function Header() {
         <span>deliver</span>
       </h1>
       <span className='header__background--text'>***</span>
-      <ScrollingText
-        content='Websites and applications'
-        className='header__scrolling--text-1'
+      <ScrollingTextBanner
+        content='responsive designs'
+        icon='&#x2022;'
+        className='header__scrolling--content-1'
       />
 
-      <ScrollingText
-        content='Websites and applications'
-        className='header__scrolling--text-2'
+      <ScrollingTextBanner
+        content='websites and applications'
+        icon='&#x2022;'
+        className='header__scrolling--content-2'
       />
 
-      <ScrollingText
-        content='Websites and applications'
-        className='header__scrolling--text-1'
+      <ScrollingTextBanner
+        content='expanding skills and technologies'
+        icon='&#x2022;'
+        className='header__scrolling--content-1'
       />
     </div>
   );

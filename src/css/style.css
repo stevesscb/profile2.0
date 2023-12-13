@@ -87,17 +87,24 @@ body {
   transition: all 2s ease; }
   .header__scrolling:last-child {
     border-bottom: 2px solid #1f1f1f; }
-  .header__scrolling--text {
+  .header__scrolling--content {
     display: inline-block;
     font-family: "Anton", sans-serif;
     font-size: 6rem; }
-    .header__scrolling--text-1 {
-      color: transparent;
-      -webkit-text-stroke-width: 1.8px;
-      -webkit-text-stroke-color: #1f1f1f;
-      animation: animate_text-1 30s linear infinite; }
-    .header__scrolling--text-2 {
-      animation: animate_text-2 30s linear infinite; }
+
+.header__scrolling--content .icon {
+  margin: 0 1rem; }
+
+.header__scrolling--content-1 {
+  color: transparent;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: #1f1f1f;
+  animation: animate_text-1 30s linear infinite; }
+
+.header__scrolling--content-2 {
+  animation: animate_text-2 30s linear infinite; }
+  .header__scrolling--content-2 .icon {
+    color: #f25f24; }
 
 @keyframes animate_text-1 {
   from {
