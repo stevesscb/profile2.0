@@ -3,10 +3,8 @@ import * as React from 'react';
 import ScrollingTextBanner from '../components/Scrolling-text-banner';
 
 function Header() {
-  console.log('header');
-
   return (
-    <div className='header'>
+    <header className='header'>
       <h1 className='header__title'>
         <span>My passion is to</span>
         <span>build</span>
@@ -31,7 +29,7 @@ function Header() {
         icon='&#x2022;'
         className='header__scrolling--content-1'
       />
-    </div>
+    </header>
   );
 }
 

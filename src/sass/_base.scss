@@ -1,17 +1,31 @@
-// COLOR VARIABLES
-$color-primary: #f25f24;
+:root {
+  // COLORS
+  --color-primary: #f25f24;
+  --color-secondary: #1f1f1f;
 
-$color-bright: #4fe9a4;
+  --color-bright: #4fe9a4;
+  --color-bright-rgba: 79, 233, 164; // To use with rgba()
 
-$color-secondary: #1f1f1f;
+  --color-white: #fff;
 
-$color-light-1: #fff;
-$color-light-2: #f9f7f6;
+  --color-light-1: #f9f7f6; // Background overlay
+  --color-light-1-rgba: 249, 247, 246; // To use with rgba()
 
-// FONT VARIABLES
-$font-heading: 'Roboto Slab', sans-serif;
-$font-content: 'Roboto', sans-serif;
-$font-content-secondary: 'Anton', sans-serif;
+  // FONT STYLES
+  --font-heading: 'Roboto Slab', sans-serif; // 700, 900
+  --font-content: 'Roboto', sans-serif; // 300, 400
+  --font-content-secondary: 'Anton', sans-serif;
+
+  --font-heading-bold: 700;
+  --font-heading-black: 900;
+
+  --font-content-light: 300;
+  --font-content-regular: 400;
+  --font-content-bold: 700;
+
+  // TEXT STYLES
+  --white-text-shadow: 1px 1px 2px var(--color-white);
+}
 
 *,
 *::before,
@@ -27,14 +41,14 @@ html {
 }
 
 body {
-  background-image: linear-gradient(
-      rgba($color-light-2, 0.9),
-      rgba($color-light-2, 0.9)
+  background: linear-gradient(
+      rgba(var(--color-light-1-rgba), 0.7),
+      rgba(var(--color-light-1-rgba), 0.7)
     ),
-    url(../images/main-background.jpg);
+    url(../images/main-background.jpg) no-repeat center center fixed;
   background-size: cover;
 
-  font-family: $font-content;
-  color: $color-secondary;
+  font-family: var(--font-content);
+  color: var(--color-secondary);
   font-weight: 400;
 }
