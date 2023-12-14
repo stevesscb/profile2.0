@@ -1,10 +1,13 @@
 .navbar {
-  background-color: $color-secondary;
-  color: $color-light-1;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   padding: 2rem 7rem;
 
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+
   & > * {
-    font-family: $font-heading;
+    font-family: var(--font-heading);
     text-transform: uppercase;
   }
 
