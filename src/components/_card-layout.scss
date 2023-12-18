@@ -1,7 +1,4 @@
 .card {
-  // display: grid;
-  // grid-template-rows: repeat(2, 1fr);
-
   &--1 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
