@@ -62,6 +62,12 @@ body {
   to {
     transform: translate3d(0, 0, 0) scale(1); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .about {
   background-color: var(--color-white);
   display: grid;
@@ -124,6 +130,9 @@ body {
       .about__right .icons img {
         height: 10rem;
         width: 10rem; }
+      .about__right .icons p {
+        text-align: center;
+        font-size: 1.5rem; }
 
 .header {
   position: relative;
@@ -178,10 +187,31 @@ body {
     .navbar__heading--sub {
       font-size: 2rem; }
 
-.portfolio {
-  background: gray;
+.projects {
   grid-row: 4 / 5;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 4rem; }
+  .projects__header {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-content-secondary); }
+    .projects__header--main {
+      font-weight: 300;
+      font-size: 12rem;
+      letter-spacing: 0.5rem;
+      color: transparent;
+      -webkit-text-stroke-width: 1.8px;
+      -webkit-text-stroke-color: var(--color-light-1); }
+  .projects__cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 5vw repeat(3, 1fr) 5vw;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem; }
 
 .contact {
   background: orangered;
@@ -196,7 +226,7 @@ body {
   padding-left: 1rem;
   overflow: hidden;
   display: grid;
-  grid-template-rows: [nav-start] max-content [nav-end header-start] max-content [header-end about-start] max-content [about-end portfolio-start] 80vh [portfolio-end contact-start] 80vh [contact-end];
+  grid-template-rows: [nav-start] min-content [nav-end header-start] max-content [header-end about-start] max-content [about-end portfolio-start] 100vh [portfolio-end contact-start] 80vh [contact-end];
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3rem; }
 
@@ -225,3 +255,87 @@ body {
   animation: animate_text-2 30s linear infinite; }
   .header__scrolling--content-2 .icon {
     color: var(--color-primary); }
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
+  .card__img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center; }
+  .card__caption {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+    font-weight: 300;
+    background-color: var(--color-secondary);
+    transform: translateY(90%); }
+    .card__caption--title {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .card__caption--title h2 {
+        font-size: 2rem;
+        font-weight: inherit; }
+    .card__caption--description {
+      height: 80%;
+      padding: 2rem;
+      font-size: 1.6rem; }
+  .card__cta {
+    margin-top: 2rem; }
+    .card__cta--link, .card__cta:link, .card__cta:visited {
+      cursor: pointer;
+      display: inline-block;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: currentColor; }
+      .card__cta--link:hover, .card__cta--link:active, .card__cta:link:hover, .card__cta:link:active, .card__cta:visited:hover, .card__cta:visited:active {
+        transform: rotate(-3deg) translateX(5px) scale(1.1);
+        box-shadow: 0 1rem 1rem rgba(var(--color-bright-rgba), 0.3); }
+  .card:hover .card__caption--title {
+    background-color: var(--color-primary); }
+  .card:hover .card__caption {
+    transform: translateY(0%);
+    opacity: 0.9; }
+  .card:hover .card__img {
+    webkit-filter: blur(4px);
+    /* Chrome, Safari, Opera */
+    filter: blur(4px); }
+  .card:hover .card__caption--description {
+    animation: fadeIn 4s; }
+
+.card--1 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3; }
+
+.card--2 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4; }
+
+.card--3 {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5; }
+
+.card--4 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3; }
+
+.card--5 {
+  grid-row: 2/ 3;
+  grid-column: 3 / 4; }
+
+.card--6 {
+  grid-row: 2/ 3;
+  grid-column: 4 / 5; }
