@@ -41,7 +41,7 @@ function About() {
           more efficient and updated methods.
         </p>
         <p>
-          If you like what you hear and you think we could collaborate please,
+          If you like what you hear and you think we could collaborate please
           <a href='#' className='about__link'>
             &nbsp;get in touch.
           </a>
