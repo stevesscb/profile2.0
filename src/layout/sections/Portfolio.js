@@ -9,8 +9,8 @@ function Portfolio() {
   return (
     <div className='projects'>
       <div className='projects__header'>
-        <h4 className='projects__header--main'>My Work</h4>
-        <h5 className='projects__header--sub'>Portfolio</h5>
+        <h4>My Work</h4>
+        <h5>Portfolio</h5>
       </div>
       <div className='projects__cards'>
         <Card

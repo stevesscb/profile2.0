@@ -5,15 +5,15 @@
 @import './abstracts/animations';
 
 // LAYOUT
-@import 'base';
-@import 'wrapper';
-@import 'header';
-@import 'navbar';
+@import './layout/base';
+@import './layout/header';
+@import './layout/navbar';
+@import './layout/wrapper';
 
 // SECTIONS
-@import 'about';
-@import 'portfolio';
-@import 'contact';
+@import './sections/about';
+@import './sections/contact';
+@import './sections/portfolio';
 
 // COMPONENTS
 @import '../components/scrolling-text-banner';
@@ -24,3 +24,4 @@
 @import '../components/button';
 @import '../components/social-links';
 @import '../components/icons';
+@import '../components/nav-link';

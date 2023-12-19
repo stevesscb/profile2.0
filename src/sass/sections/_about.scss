@@ -43,20 +43,20 @@
   }
 
   &__link {
-    &:link,
-    &:visited {
-      color: var(--color-bright);
-      font-weight: var(--font-content-bold);
-      text-decoration: none;
-      cursor: pointer;
-      display: inline-block;
-      transition: all 0.2s ease;
+    color: var(--color-bright);
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    font-size: inherit;
 
-      &:hover,
-      &:active {
-        transform: rotate(-3deg) translateX(5px) scale(1.1);
-        box-shadow: 0 1rem 1rem rgba(var(--color-bright-rgba), 0.3);
-      }
+    &:hover,
+    &:active {
+      transform: rotate(-3deg) translateX(5px) scale(1.1);
+      box-shadow: 0 1rem 1rem rgba(var(--color-bright-rgba), 0.3);
     }
   }
 

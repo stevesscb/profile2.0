@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Icons from '../../components/Icons';
 
@@ -26,9 +27,9 @@ function About() {
         </p>
         <p>
           If you like what you hear and you think we could collaborate please
-          <Link to='#contact' className='about__link'>
+          <button onClick={() => scrollTo('.contact')} className='about__link'>
             &nbsp;get in touch.
-          </Link>
+          </button>
         </p>
       </div>
       <div className='about__right'>
