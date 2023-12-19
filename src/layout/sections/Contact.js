@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-import LinkedIn from '../../images/linkedin.svg';
-import Gmail from '../../images/gmail.svg';
-import Github from '../../images/githubbw.svg';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import SocialLinks from '../../components/Social-links';
+
+// Images
 import PaperPlane from '../../images/paper-plane.png';
 
-function Portfolio() {
+function Contact() {
   return (
     <div className='contact'>
       <div className='contact__heading'>
@@ -18,45 +20,21 @@ function Portfolio() {
       </div>
       <div className='form__container'>
         <form action='' className='contact__form'>
-          <label htmlFor=''>Name:</label>
-          <input type='text' placeholder='first name' />
-          <label htmlFor=''>Email address:</label>
-          <input type='email' placeholder='example@gmail.com' />
+          <Input id='name' placeholder='First name' type='text' label='Name' />
+          <Input
+            id='email'
+            placeholder='Email'
+            type='email'
+            label='Email address'
+          />
           <label htmlFor=''>Message:</label>
-          <textarea placeholder='Write your message here' />
-          <button className='btn'>Submit</button>
+          <textarea placeholder='Write your message here' required />
+          <Button type='submit' />
         </form>
-        <ul className='contact__links'>
-          <li className='contact__links--item'>
-            <a
-              href='https://www.linkedin.com/in/stephen-cole-bowen/'
-              target='blank'
-              className='link'
-            >
-              <img src={LinkedIn} alt='LinkedIn icon' />
-              <p>LinkedIn</p>
-            </a>
-          </li>
-          <li className='contact__links--item'>
-            <a href='mailto:stevesscb@gmail.com' className='link'>
-              <img src={Gmail} alt='Email icon' />
-              <p>Email</p>
-            </a>
-          </li>
-          <li className='contact__links--item'>
-            <a
-              href='https://github.com/stevesscb'
-              target='blank'
-              className='link'
-            >
-              <img src={Github} alt='Github icon' />
-              <p>Github</p>
-            </a>
-          </li>
-        </ul>
+        <SocialLinks />
       </div>
     </div>
   );
 }
 
-export default Portfolio;
+export default Contact;
