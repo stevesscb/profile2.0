@@ -27,8 +27,12 @@ function Contact() {
             type='email'
             label='Email address'
           />
-          <label htmlFor=''>Message:</label>
-          <textarea placeholder='Write your message here' required />
+          <label htmlFor='message'>Message:</label>
+          <textarea
+            id='message'
+            placeholder='Write your message here'
+            required
+          />
           <Button type='submit' />
         </form>
         <SocialLinks />

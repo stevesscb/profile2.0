@@ -1,14 +1,19 @@
 // import all scss files into this file then compile into css/style.css
 
-// SECTIONS
+// ABSTRACTS
+@import './abstracts/mixins';
+@import './abstracts/animations';
+
+// LAYOUT
 @import 'base';
-@import 'animations';
-@import 'about';
+@import 'wrapper';
 @import 'header';
 @import 'navbar';
+
+// SECTIONS
+@import 'about';
 @import 'portfolio';
 @import 'contact';
-@import 'wrapper';
 
 // COMPONENTS
 @import '../components/scrolling-text-banner';
@@ -18,3 +23,4 @@
 @import '../components/input';
 @import '../components/button';
 @import '../components/social-links';
+@import '../components/icons';
