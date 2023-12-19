@@ -43,34 +43,5 @@
         margin-left: 4rem;
       }
     }
-
-    &__link {
-      cursor: pointer;
-      color: var(--color-white);
-      font-size: 1.8rem;
-      font-weight: 300;
-      letter-spacing: 1.1px;
-      font-family: var(--font-content);
-      text-transform: uppercase;
-      text-decoration: none;
-      border: none;
-      background: none;
-      position: relative;
-
-      &::after {
-        @include underline;
-        background-color: var(--color-primary);
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
-
-      &:hover,
-      &:active {
-        color: var(--color-primary);
-      }
-    }
   }
 }
