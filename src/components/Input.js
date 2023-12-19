@@ -4,7 +4,7 @@ function Input({ id, placeholder, type, label }) {
   return (
     <>
       <label htmlFor={id}>{label}:</label>
-      <input required type={type} placeholder={placeholder} />
+      <input id={id} required type={type} placeholder={placeholder} />
     </>
   );
 }
