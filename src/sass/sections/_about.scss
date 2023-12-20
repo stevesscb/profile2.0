@@ -6,11 +6,15 @@
   grid-column: 1 / -1;
   grid-row: 4 / 5;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: none;
+  }
+
   &__left {
     background-color: var(--color-secondary);
     padding: 5rem 6rem;
 
-    font-weight: var(--font-content-light);
+    font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.4;
     color: var(--color-white);
@@ -28,9 +32,8 @@
     }
 
     &--standout-text {
-
       color: var(--color-bright);
-      font-weight: var(--font-content-regular);
+      font-weight: 400;
       display: inline-block;
       max-width: fit-content;
       align-items: start;
@@ -67,7 +70,6 @@
         transform: rotate(-3deg) translateX(5px) scale(1.1);
         box-shadow: 0 1rem 1rem rgba(var(--color-bright-rgba), 0.3);
       }
-
     }
   }
 
@@ -77,7 +79,7 @@
 
     .heading {
       font-family: var(--font-heading);
-      font-weight: var(--font-heading-bold);
+      font-weight: 700;
       font-size: 6rem;
       text-align: center;
       margin-bottom: 4rem;

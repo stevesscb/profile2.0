@@ -13,13 +13,12 @@
   &__title {
     text-align: center;
     z-index: 100;
-    // background-color: red;
     align-self: center;
 
     &--background {
       color: var(--color-primary);
       font-size: 170rem;
-      font-weight: var(--font-heading-black);
+      font-weight: 900;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -46,10 +45,9 @@
     }
 
     span:not(:first-child) {
-      font-weight: var(--font-heading-black);
+      font-weight: 900;
       font-size: 16rem;
       margin-bottom: 4rem;
-
     }
 
     span {

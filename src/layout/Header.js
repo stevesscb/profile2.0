@@ -10,7 +10,7 @@ function Header() {
         <span>build</span>
         <span>optimize</span>
         <span>deliver</span>
-        <div className='header__title--background'>***</div>
+        {/* <div className='header__title--background'>***</div> */}
       </h1>
       <ScrollingTextBanner
         content='responsive designs'
