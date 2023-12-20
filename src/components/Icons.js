@@ -37,7 +37,7 @@ function Icons() {
       </span>
       <span>
         <img src={Jquery} alt='Jquery icon' />
-        <p>jquery</p>
+        <p>jQuery</p>
       </span>
       <span>
         <img src={Sass} alt='Sass icon' />

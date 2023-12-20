@@ -3,19 +3,34 @@
   font-family: var(--font-heading);
   text-transform: uppercase;
   overflow: hidden;
-  // testing
-  margin-top: -2rem;
+
+  margin-top: -15rem;
 
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 
+  display: grid;
+  grid-template-rows: 60vh repeat(3, 10vh);
+
   &__title {
     text-align: center;
     z-index: 100;
+    align-self: center;
+    padding: 2rem;
+
+    &--background {
+      color: var(--color-primary);
+      font-weight: 900;
+      font-size: 220rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -2;
+      transform: translate(-50%, -55%);
+      opacity: 0.8;
+    }
 
     span:first-child {
-      margin: 0 2rem;
-
       display: grid;
       grid-template-columns: 1fr max-content 1fr;
       column-gap: 1rem;
@@ -39,18 +54,7 @@
       display: block;
       line-height: 1;
       text-shadow: var(--white-text-shadow);
+      margin: 2rem 0;
     }
-  }
-
-  &__background--text {
-    color: var(--color-primary);
-    font-size: 160rem;
-    font-weight: var(--font-heading-black);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -2;
-    transform: translate(-50%, -55%);
-    opacity: 0.8;
   }
 }
