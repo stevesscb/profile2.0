@@ -23,7 +23,7 @@ function Portfolio() {
             quia accusantium sit unde atque eius natus vel fugit? Labore! Lorem
             ipsum dolor sit, amet consectetur adipisicing elit. Ratione quaerat
             quae dolorem, ipsam quas saepe id labore sint neque harum quia
-            accusantium sit unde atque eius natus vel fugit? Labore!'
+            accusantium sit unde atque eius natus vel fuscszcszgit? Labore!'
           url='#'
         />
 
