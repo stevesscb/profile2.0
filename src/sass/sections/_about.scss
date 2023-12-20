@@ -9,6 +9,7 @@
   &__left {
     background-color: var(--color-secondary);
     padding: 5rem 6rem;
+
     font-weight: var(--font-content-light);
     font-size: 1.8rem;
     line-height: 1.4;
@@ -27,6 +28,7 @@
     }
 
     &--standout-text {
+
       color: var(--color-bright);
       font-weight: var(--font-content-regular);
       display: inline-block;
@@ -65,6 +67,7 @@
         transform: rotate(-3deg) translateX(5px) scale(1.1);
         box-shadow: 0 1rem 1rem rgba(var(--color-bright-rgba), 0.3);
       }
+
     }
   }
 

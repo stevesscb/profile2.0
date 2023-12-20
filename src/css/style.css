@@ -248,11 +248,24 @@ body {
 .projects {
   grid-row: 6 / 7;
   grid-column: 1 / -1;
+
   display: grid;
-  grid-template-rows: min-content;
-  row-gap: 4rem; }
-  .projects__header {
+  grid-template-rows: [nav-start] min-content [nav-end header-start] max-content [header-end about-start] max-content [about-end portfolio-start] 100vh [portfolio-end contact-start] 80vh [contact-end];
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem; }
+
+.about {
+  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4; }
+  .about__left {
     background-color: var(--color-secondary);
+    padding: 4rem 6rem;
+    font-weight: var(--font-content-light);
+    font-size: 1.8rem;
+    line-height: 1.4;
     color: var(--color-white);
     text-align: center;
     font-family: var(--font-content-secondary); }
