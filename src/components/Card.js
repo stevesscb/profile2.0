@@ -12,7 +12,7 @@ function Card({ number, title, description, url, img, alt }) {
           <p>{description}</p>
           <div className='card__cta'>
             <a className='card__cta--link' href={url}>
-              Open site
+              Open site &rarr;
             </a>
           </div>
         </div>

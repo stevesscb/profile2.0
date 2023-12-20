@@ -1,7 +1,7 @@
 .contact {
   background: var(--color-primary);
   opacity: 0.8;
-  padding: 2rem;
+  padding: 4rem;
 
   grid-row: 8 / 9;
   grid-column: 1 / -1;
@@ -11,12 +11,16 @@
   align-items: center;
   justify-items: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: none;
+  }
+
   &__heading {
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     font-family: var(--font-heading);
-    font-weight: var(--font-heading-black);
+    font-weight: 900;
 
     width: 100%;
 
@@ -33,6 +37,10 @@
     align-items: center;
     border-left: 2px solid var(--color-secondary);
     padding: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      border-left: none;
+    }
   }
 
   &__form {
