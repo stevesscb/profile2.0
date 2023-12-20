@@ -4,11 +4,17 @@
   max-width: 75vw;
   padding-right: 1rem;
   padding-left: 1rem;
-  // overflow: hidden;
 
   display: grid;
-  grid-template-rows: [nav-start] min-content [nav-end header-start] max-content [header-end about-start] max-content [about-end portfolio-start] 100vh [portfolio-end contact-start] 80vh [contact-end];
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:
+    [nav-start] min-content [nav-end header-start] 90vh [header-end] var(
+      --spacing
+    )
+    [about-start] max-content [about-end] var(--spacing)
+    [projects-start] 100vh [projects-end] var(--spacing)
+    [contact-start] 80vh [contact-end];
 
-  row-gap: 3rem;
+  // grid-template-columns: repeat(2, 1fr);
+
+  // row-gap: 3rem;
 }
