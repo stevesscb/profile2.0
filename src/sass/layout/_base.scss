@@ -29,6 +29,7 @@ $bp-large: 78.125em; // 1200px
 $bp-medium-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
 $bp-medium-small: 46.875em; // 750px
+$bp-small: 31.25em; // 500px
 
 *,
 *::before,
@@ -40,7 +41,7 @@ $bp-medium-small: 46.875em; // 750px
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  font-size: 53%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-padding-top: 13rem; // Height of Navbar for position:sticky
 
   @media only screen and (max-width: $bp-large) {

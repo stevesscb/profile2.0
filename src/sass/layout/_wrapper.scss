@@ -13,10 +13,29 @@
     max-width: 100vw;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   display: grid;
   grid-template-rows:
     [nav-start] 12rem [nav-end header-start] 90vh [header-end] var(--spacing)
-    [about-start] max-content [about-end] var(--spacing)
-    [projects-start] max-content [projects-end] var(--spacing)
-    [contact-start] max-content [contact-end];
+    [about-start] minmax(min-content, max-content) [about-end] var(--spacing)
+    [projects-start] minmax(min-content, max-content) [projects-end] var(
+      --spacing
+    )
+    [contact-start] minmax(min-content, 90vh) [contact-end];
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows:
+      [nav-start] 12rem [nav-end header-start] min-content [header-end] var(
+        --spacing
+      )
+      [about-start] minmax(min-content, 80vh) [about-end] var(--spacing)
+      [projects-start] minmax(min-content, max-content) [projects-end] var(
+        --spacing
+      )
+      [contact-start] min-content [contact-end];
+  }
 }

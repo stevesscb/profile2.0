@@ -5,7 +5,7 @@ import ScrollingTextBanner from '../components/Scrolling-text-banner';
 function Header() {
   return (
     <header className='header'>
-      <h1 className='header__title'>
+      <h1 className='header__title text-center'>
         <span>My passion is to</span>
         <span>build</span>
         <span>optimize</span>

@@ -8,7 +8,7 @@ import HorizonDigital from '../../images/horizon-digital.jpg';
 function Portfolio() {
   return (
     <div className='projects'>
-      <div className='projects__header'>
+      <div className='projects__header text-center'>
         <h4>My Work</h4>
         <h5>Portfolio</h5>
       </div>
