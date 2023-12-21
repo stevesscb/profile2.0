@@ -39,7 +39,7 @@ function About() {
           </p>
         </div>
         <div className='about__right'>
-          <h3 className='heading'>
+          <h3 className='heading text-center'>
             Perfecting the build process with, but not limited to...
           </h3>
           <Icons />

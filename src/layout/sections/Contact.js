@@ -10,7 +10,7 @@ import PaperPlane from '../../images/paper-plane.png';
 function Contact() {
   return (
     <div className='contact'>
-      <div className='contact__heading'>
+      <div className='contact__heading text-center'>
         <img
           src={PaperPlane}
           alt='Contact icon'

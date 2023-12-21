@@ -3,29 +3,34 @@
   font-family: var(--font-heading);
   text-transform: uppercase;
   overflow: hidden;
+  padding: 2rem;
 
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 
   display: grid;
-  grid-template-rows: 60vh repeat(3, 10vh);
+  grid-template-rows: 50vh repeat(3, 10vh);
+
+  @media only screen and (min-width: $bp-largest) {
+    grid-template-rows: 65vh repeat(3, 8vh);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: 40vh repeat(3, 8vh);
+  }
 
   &__title {
-    text-align: center;
     z-index: 100;
     align-self: center;
+    overflow: hidden;
 
-    &--background {
-      color: var(--color-primary);
-      font-size: 170rem;
-      font-weight: 900;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: -2;
-      transform: translate(-50%, -50%);
-      opacity: 0.8;
-    }
+    background: linear-gradient(
+        rgba(var(--color-light-1-rgba), 0),
+        rgba(var(--color-light-1-rgba), 0)
+      ),
+      url(../images/header-background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
 
     span:first-child {
       margin: 0 2rem;
@@ -46,8 +51,19 @@
 
     span:not(:first-child) {
       font-weight: 900;
-      font-size: 16rem;
-      margin-bottom: 4rem;
+      font-size: 14rem;
+
+      @media only screen and (min-width: $bp-largest) {
+        font-size: 18rem;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        font-size: 12rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 10rem;
+      }
     }
 
     span {
