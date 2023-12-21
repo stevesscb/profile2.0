@@ -11,7 +11,7 @@ function Card({ number, title, description, url, img, alt }) {
         <div className='card__caption--description'>
           <p>{description}</p>
           <div className='card__cta'>
-            <a className='card__cta--link' href={url}>
+            <a className='card__cta--link' href={url} target='blank'>
               Open site &rarr;
             </a>
           </div>

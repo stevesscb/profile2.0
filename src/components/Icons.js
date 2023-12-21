@@ -2,23 +2,23 @@ import * as React from 'react';
 
 // Images
 import Html from '../images/html5.svg';
-// import Css from '../images/css3.svg';
-// import Js from '../images/javascript.svg';
-// import Jquery from '../images/jquery.svg';
-// import Sass from '../images/sass.svg';
-// import Tailwind from '../images/tailwind.svg';
+import Css from '../images/css3.svg';
+import Js from '../images/javascript.svg';
+import Jquery from '../images/jquery.svg';
+import Sass from '../images/sass.svg';
+import Tailwind from '../images/tailwind.svg';
 
-// import Bootstrap from '../images/bootstrap.svg';
-// import ReactSvg from '../images/react.svg';
-// import Vite from '../images/vite.svg';
-// import Next from '../images/nextjs.svg';
-// import Gatsby from '../images/gatsby.svg';
-// import Redux from '../images/redux.svg';
+import Bootstrap from '../images/bootstrap.svg';
+import ReactSvg from '../images/react.svg';
+import Vite from '../images/vite.svg';
+import Next from '../images/nextjs.svg';
+import Gatsby from '../images/gatsby.svg';
+import Redux from '../images/redux.svg';
 
-// import Github from '../images/github.svg';
-// import Gitlab from '../images/gitlab.svg';
-// import Wordpress from '../images/wordpress.svg';
-// import Scrum from '../images/scrum.svg';
+import Github from '../images/github.svg';
+import Gitlab from '../images/gitlab.svg';
+import Wordpress from '../images/wordpress.svg';
+import Scrum from '../images/scrum.png';
 
 function Icons() {
   return (
@@ -28,63 +28,63 @@ function Icons() {
         <p>HTML5</p>
       </span>
       <span>
-        <img src={Html} alt='Css icon' />
+        <img src={Css} alt='Css icon' />
         <p>CSS3</p>
       </span>
       <span>
-        <img src={Html} alt='Javascript icon' />
+        <img src={Js} alt='Javascript icon' />
         <p>JavaScript</p>
       </span>
       <span>
-        <img src={Html} alt='Jquery icon' />
-        <p>jquery</p>
+        <img src={Jquery} alt='Jquery icon' />
+        <p>jQuery</p>
       </span>
       <span>
-        <img src={Html} alt='Sass icon' />
+        <img src={Sass} alt='Sass icon' />
         <p>SCSS</p>
       </span>
       <span>
-        <img src={Html} alt='Bootstrap icon' />
-        <p>Bootstrap</p>
-      </span>
-      <span>
-        <img src={Html} alt='Tailwind icon' />
+        <img src={Tailwind} alt='Bootstrap icon' />
         <p>Tailwind</p>
       </span>
       <span>
-        <img src={Html} alt='React icon' />
+        <img src={Bootstrap} alt='Tailwind icon' />
+        <p>Bootstrap</p>
+      </span>
+      <span>
+        <img src={ReactSvg} alt='React icon' />
         <p>React</p>
       </span>
       <span>
-        <img src={Html} alt='Vite icon' />
+        <img src={Vite} alt='Vite icon' />
         <p>Vite</p>
       </span>
       <span>
-        <img src={Html} alt='Next icon' />
+        <img src={Next} alt='Next icon' />
         <p>NextJs</p>
       </span>
       <span>
-        <img src={Html} alt='Gatsby icon' />
+        <img src={Gatsby} alt='Gatsby icon' />
         <p>Gatsby</p>
       </span>
       <span>
-        <img src={Html} alt='Redux icon' />
+        <img src={Redux} alt='Redux icon' />
         <p>Redux</p>
       </span>
       <span>
-        <img src={Html} alt='Github icon' />
+        <img src={Github} alt='Github icon' />
         <p>Github</p>
       </span>
       <span>
-        <img src={Html} alt='Gitlab icon' />
+        <img src={Gitlab} alt='Gitlab icon' />
         <p>Gitlab</p>
       </span>
       <span>
-        <img src={Html} alt='Scrum icon' />
+        <img src={Scrum} alt='Scrum icon' />
         <p>Scrum</p>
       </span>
       <span>
-        <img src={Html} alt='Wordpress icon' />
+        <img src={Wordpress} alt='Wordpress icon' />
         <p>WordPress</p>
       </span>
     </div>

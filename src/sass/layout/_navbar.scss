@@ -22,11 +22,11 @@
     justify-self: start;
 
     h2 {
-      font-size: 2.8rem;
+      font-size: var(--font-larger);
     }
 
     h3 {
-      font-size: 2rem;
+      font-size: var(--font-regular);
     }
   }
 
