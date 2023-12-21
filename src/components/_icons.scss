@@ -2,9 +2,9 @@
   padding: 2rem;
 
   display: grid;
+  row-gap: 2rem;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
   justify-items: center;
   align-items: center;
 
@@ -15,7 +15,6 @@
 
   p {
     text-align: center;
-    font-size: 1.5rem;
-    display: none;
+    font-size: var(--font-small);
   }
 }

@@ -5,7 +5,7 @@ import Wrapper from '../layout/Wrapper';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 import About from '../layout/sections/About';
-import Portfolio from '../layout/sections/Portfolio';
+import Projects from '../layout/sections/Projects';
 import Contact from '../layout/sections/Contact';
 
 import '../css/style.css';
@@ -19,7 +19,7 @@ const IndexPage = () => {
 
       <About />
 
-      <Portfolio />
+      <Projects />
 
       <Contact />
     </Wrapper>

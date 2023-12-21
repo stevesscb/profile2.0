@@ -14,8 +14,7 @@
     padding: 4rem;
     background-color: var(--color-secondary);
 
-    font-weight: 300;
-    font-size: 1.8rem;
+    font-size: var(--font-regular);
     line-height: 1.4;
     color: var(--color-white);
 
@@ -33,12 +32,12 @@
       padding: 0.8rem 2rem;
       border-radius: 20px;
       background-color: rgba(var(--color-bright-rgba), 0.1);
-      font-size: 2rem;
+      font-size: var(--font-regular);
       margin-bottom: 2rem;
     }
 
     &--emoticon {
-      font-size: 3rem;
+      font-size: var(--font-larger);
       animation: wobble 2.5s infinite;
       display: inline-block;
     }
@@ -54,6 +53,7 @@
       transition: all 0.2s ease;
       border: none;
       background: none;
+      font-size: inherit;
 
       &:hover,
       &:active {
