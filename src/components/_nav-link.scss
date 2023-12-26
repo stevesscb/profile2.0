@@ -15,13 +15,14 @@
     background-color: var(--color-primary);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &.active::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 
   &:hover,
-  &:active {
+  &.active {
     color: var(--color-primary);
   }
 }
