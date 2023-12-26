@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { StrictMode } from 'react';
 
 import Wrapper from '../layout/Wrapper';
 
@@ -10,29 +11,8 @@ import Contact from '../layout/sections/Contact';
 
 import '../css/style.css';
 
-const IndexPage = () => {
-  return (
-    <Wrapper>
-      <Navbar />
-
-      <Header />
-
-      <About />
-
-      <Projects />
-
-      <Contact />
-    </Wrapper>
-  );
-};
-
-export default IndexPage;
-
 export const Head = () => (
   <>
-    <meta charSet='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
     <meta
       name='Stephen Cole Bowen'
       content='Front end development / Web development professional portfolio'
@@ -50,3 +30,23 @@ export const Head = () => (
     />
   </>
 );
+
+const IndexPage = () => {
+  return (
+    <StrictMode>
+      <Wrapper>
+        <Navbar />
+
+        <Header />
+
+        <About />
+
+        <Projects />
+
+        <Contact />
+      </Wrapper>
+    </StrictMode>
+  );
+};
+
+export default IndexPage;
