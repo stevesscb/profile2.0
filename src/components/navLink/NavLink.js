@@ -10,8 +10,6 @@ function NavLink({ link, label }) {
     if (links.length) {
       links.forEach((link) => {
         link.addEventListener('click', (e) => {
-          console.log('click');
-
           links.forEach((link) => {
             link.classList.remove('active');
           });

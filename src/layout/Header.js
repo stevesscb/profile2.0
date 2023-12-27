@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import ScrollingTextBanner from '../components/Scrolling-text-banner';
+import ScrollingTextBanner from '../components/scrollingText/Scrolling-text-banner';
 
 function Header() {
   return (
@@ -10,7 +10,6 @@ function Header() {
         <span>build</span>
         <span>optimize</span>
         <span>deliver</span>
-        {/* <div className='header__title--background'>***</div> */}
       </h1>
       <ScrollingTextBanner
         content='responsive designs'

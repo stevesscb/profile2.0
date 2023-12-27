@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import Icons from '../../components/Icons';
+import Icons from '../../components/icons/Icons';
 
 function About() {
   return (

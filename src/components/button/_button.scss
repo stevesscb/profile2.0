@@ -17,4 +17,11 @@
     color: var(--color-white);
     transform: scale(0.9);
   }
+
+  &:disabled {
+    box-shadow: none;
+    transform: none;
+    color: #787878;
+    cursor: not-allowed;
+  }
 }

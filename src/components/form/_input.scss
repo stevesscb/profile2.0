@@ -1,0 +1,45 @@
+.control__group {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: var(--font-regular-large);
+    margin-bottom: 5px;
+  }
+
+  input {
+    height: 4rem;
+  }
+
+  textarea {
+    height: 20rem;
+    resize: none;
+  }
+
+  input,
+  textarea {
+    width: 50rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+    font-family: var(--font-content);
+    font-size: var(--font-regular);
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--color-secondary);
+    }
+
+    &::placeholder {
+      font-size: var(--font-small);
+      font-style: italic;
+    }
+  }
+
+  &--error {
+    margin-top: 2px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    min-height: 3rem;
+  }
+}
