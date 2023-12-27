@@ -1,24 +1,24 @@
 import * as React from 'react';
 
 // Images
-import Html from '../images/html5.svg';
-import Css from '../images/css3.svg';
-import Js from '../images/javascript.svg';
-import Jquery from '../images/jquery.svg';
-import Sass from '../images/sass.svg';
-import Tailwind from '../images/tailwind.svg';
+import Html from '../../images/html5.svg';
+import Css from '../../images/css3.svg';
+import Js from '../../images/javascript.svg';
+import Jquery from '../../images/jquery.svg';
+import Sass from '../../images/sass.svg';
+import Tailwind from '../../images/tailwind.svg';
 
-import Bootstrap from '../images/bootstrap.svg';
-import ReactSvg from '../images/react.svg';
-import Vite from '../images/vite.svg';
-import Next from '../images/nextjs.svg';
-import Gatsby from '../images/gatsby.svg';
-import Redux from '../images/redux.svg';
+import Bootstrap from '../../images/bootstrap.svg';
+import ReactSvg from '../../images/react.svg';
+import Vite from '../../images/vite.svg';
+import Next from '../../images/nextjs.svg';
+import Gatsby from '../../images/gatsby.svg';
+import Redux from '../../images/redux.svg';
 
-import Github from '../images/github.svg';
-import Gitlab from '../images/gitlab.svg';
-import Wordpress from '../images/wordpress.svg';
-import Scrum from '../images/scrum.png';
+import Github from '../../images/github.svg';
+import Gitlab from '../../images/gitlab.svg';
+import Wordpress from '../../images/wordpress.svg';
+import Scrum from '../../images/scrum.png';
 
 function Icons() {
   return (

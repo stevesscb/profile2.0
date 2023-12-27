@@ -38,12 +38,10 @@
     @media only screen and (max-width: $bp-medium) {
       border-left: none;
     }
-  }
 
-  &__form {
-    margin-bottom: 4rem;
-
-    display: flex;
-    flex-direction: column;
+    .submit-message {
+      font-size: var(--font-larger);
+      text-align: center;
+    }
   }
 }

@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 // Images
-import LinkedIn from '../images/linkedin.svg';
-import Gmail from '../images/gmail.svg';
-import Github from '../images/githubbw.svg';
+import LinkedIn from '../../images/linkedin.svg';
+import Gmail from '../../images/gmail.svg';
+import Github from '../../images/githubbw.svg';
 
 function SocialLinks() {
   return (
@@ -19,7 +19,7 @@ function SocialLinks() {
         </a>
       </li>
       <li className='contact__links--item'>
-        <a href='mailto:stevesscb@gmail.com' className='link'>
+        <a href='mailto:beast_feud0f@icloud.com' className='link'>
           <img src={Gmail} alt='Email icon' />
           <p>Email</p>
         </a>

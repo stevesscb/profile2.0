@@ -268,10 +268,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .contact .form__container {
         border-left: none; } }
-  .contact__form {
-    margin-bottom: 4rem;
-    display: flex;
-    flex-direction: column; }
+    .contact .form__container .submit-message {
+      font-size: var(--font-larger);
+      text-align: center; }
 
 .projects {
   grid-row: 6 / 7;
@@ -406,28 +405,38 @@ body {
   .card:hover .card__caption--description {
     animation: fadeIn 4s; }
 
-input,
-textarea {
-  width: 50rem;
-  padding: 2.5rem;
-  border-radius: 10px;
-  font-family: var(--font-content);
-  font-size: var(--font-regular); }
-  input:focus,
-  textarea:focus {
-    outline: none; }
-
-label {
-  font-size: var(--font-regular-large);
-  margin-bottom: 5px; }
-
-input {
-  margin-bottom: 2rem;
-  height: 4rem; }
-
-textarea {
-  height: 20rem;
-  resize: none; }
+.control__group {
+  display: flex;
+  flex-direction: column; }
+  .control__group label {
+    font-size: var(--font-regular-large);
+    margin-bottom: 5px; }
+  .control__group input {
+    height: 4rem; }
+  .control__group textarea {
+    height: 20rem;
+    resize: none; }
+  .control__group input,
+  .control__group textarea {
+    width: 50rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+    font-family: var(--font-content);
+    font-size: var(--font-regular); }
+    .control__group input:focus,
+    .control__group textarea:focus {
+      outline: none;
+      border: 2px solid var(--color-secondary); }
+    .control__group input::placeholder,
+    .control__group textarea::placeholder {
+      font-size: var(--font-small);
+      font-style: italic; }
+  .control__group--error {
+    margin-top: 2px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    min-height: 3rem; }
 
 .btn {
   cursor: pointer;
@@ -446,8 +455,14 @@ textarea {
     box-shadow: inset 0 0 0 50px var(--color-secondary);
     color: var(--color-white);
     transform: scale(0.9); }
+  .btn:disabled {
+    box-shadow: none;
+    transform: none;
+    color: #787878;
+    cursor: not-allowed; }
 
 .contact__links {
+  margin-top: 4rem;
   text-align: center; }
   .contact__links--item {
     display: inline-block;

@@ -17,11 +17,11 @@
 @import './sections/projects';
 
 // COMPONENTS
-@import '../components/scrolling-text-banner';
-@import '../components/scrolling-text-content';
-@import '../components/card';
-@import '../components/input';
-@import '../components/button';
-@import '../components/social-links';
-@import '../components/icons';
-@import '../components/nav-link';
+@import '../components/scrollingText/scrolling-text-banner';
+@import '../components/scrollingText/scrolling-text-content';
+@import '../components/card/card';
+@import '../components/form/input';
+@import '../components/button/button';
+@import '../components/socialLink/social-links';
+@import '../components/icons/icons';
+@import '../components/navLink/nav-link';

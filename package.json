@@ -34,6 +34,7 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
+    "@emailjs/browser": "^3.11.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "node-sass": "^9.0.0"
   }
