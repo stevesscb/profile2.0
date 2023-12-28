@@ -1,0 +1,27 @@
+// import all scss files into this file then compile into css/style.css
+
+// ABSTRACTS
+@import './abstracts/mixins';
+@import './abstracts/animations';
+@import './abstracts/utilites';
+
+// LAYOUT
+@import './layout/base';
+@import './layout/header';
+@import './layout/navbar';
+@import './layout/wrapper';
+
+// SECTIONS
+@import './sections/about';
+@import './sections/contact';
+@import './sections/projects';
+
+// COMPONENTS
+@import '../components/scrollingText/scrolling-text-banner';
+@import '../components/scrollingText/scrolling-text-content';
+@import '../components/card/card';
+@import '../components/form/input';
+@import '../components/button/button';
+@import '../components/contactLink/contact-links';
+@import '../components/icons/icons';
+@import '../components/navLink/nav-link';

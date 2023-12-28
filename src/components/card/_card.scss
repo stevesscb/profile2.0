@@ -1,0 +1,94 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 60rem;
+  border-radius: 15px;
+  border: none;
+  color: var(--color-white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__caption {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    transition-timing-function: cubic-bezier(0.79, 0.15, 0.59, 0.44);
+    font-weight: 300;
+    background-color: var(--color-secondary);
+
+    transform: translateY(90%);
+
+    &--title {
+      height: 10%;
+
+      h2 {
+        font-size: var(--font-regular-large);
+        font-weight: 400;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--description {
+      height: 80%;
+      padding: 4rem;
+      font-size: var(--font-regular);
+      line-height: 2.6rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 2rem;
+
+    &--link,
+    &:link,
+    &:visited {
+      cursor: pointer;
+      display: inline-block;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: currentColor;
+
+      &:hover,
+      &:active {
+        color: var(--color-bright);
+
+        &::after {
+          content: ' \2192';
+        }
+      }
+    }
+  }
+
+  &:hover &__caption--title {
+    background-color: var(--color-primary);
+  }
+
+  &:hover &__caption {
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
+
+  &:hover &__img {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+  }
+
+  &:hover &__caption--description {
+    animation: fadeIn 4s;
+  }
+}

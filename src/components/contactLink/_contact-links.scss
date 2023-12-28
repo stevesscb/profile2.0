@@ -1,0 +1,47 @@
+.contact__links {
+  text-align: center;
+
+  grid-column: 2 / 3;
+  align-self: center;
+
+  &--item {
+    display: inline-block;
+    margin: 0 3rem;
+
+    .link:link,
+    .link:visited {
+      cursor: pointer;
+      color: var(--color-secondary);
+      text-decoration: none;
+      font-size: var(--font-small);
+      transition: all 0.2s;
+
+      position: relative;
+
+      &::after {
+        @include underline;
+        background-color: currentColor;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      &:hover,
+      &:active {
+        color: var(--color-white);
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.icons {
+  padding: 2rem;
+
+  display: grid;
+  row-gap: 2rem;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  img {
+    max-height: 10rem;
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    font-size: var(--font-small);
+  }
+}

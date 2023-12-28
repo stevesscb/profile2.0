@@ -1,0 +1,55 @@
+.projects {
+  grid-row: 6 / 7;
+  grid-column: 1 / -1;
+
+  &__header {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-family: var(--font-content-secondary);
+    font-weight: 300;
+
+    h4 {
+      font-size: 12rem;
+      letter-spacing: 0.5rem;
+      font-weight: inherit;
+      color: transparent;
+      -webkit-text-stroke-width: 1.8px;
+      -webkit-text-stroke-color: var(--color-light-1);
+    }
+
+    h5 {
+      margin: 0 2rem;
+      padding-bottom: 1rem;
+      font-size: var(--font-regular);
+      font-family: var(--font-content);
+      font-weight: inherit;
+      text-transform: uppercase;
+
+      @include lineTextLine;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: var(--color-white);
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    padding: 4rem;
+    gap: 6rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-template-columns: auto;
+      padding: 2rem;
+    }
+  }
+}
