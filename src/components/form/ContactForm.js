@@ -77,7 +77,7 @@ function ContactForm({ submitted }) {
   };
 
   return (
-    <form ref={form} onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit} className='form'>
       <Input
         label='Name'
         id='name'

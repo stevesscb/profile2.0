@@ -5,7 +5,7 @@ import LinkedIn from '../../images/linkedin.svg';
 import Gmail from '../../images/gmail.svg';
 import Github from '../../images/githubbw.svg';
 
-function SocialLinks() {
+function ContactLinks() {
   return (
     <ul className='contact__links'>
       <li className='contact__links--item'>
@@ -34,4 +34,4 @@ function SocialLinks() {
   );
 }
 
-export default SocialLinks;
+export default ContactLinks;

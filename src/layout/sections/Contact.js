@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useState } from 'react';
+// import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import ContactForm from '../../components/form/ContactForm';
-import SocialLinks from '../../components/socialLink/Social-links';
+import ContactLinks from '../../components/contactLink/Contact-links';
 
 // Images
 import PaperPlane from '../../images/paper-plane.png';
@@ -16,24 +17,28 @@ function Contact() {
 
   return (
     <div className='contact'>
-      <div className='contact__heading text-center'>
-        <img
-          src={PaperPlane}
-          alt='Contact icon'
-          className='contact__heading--icon'
-        />
-        <h4>Contact me</h4>
+      <div className='contact__left'>
+        <div className='contact__left--heading'>
+          <img
+            src={PaperPlane}
+            alt='Contact icon'
+            className='contact__left--icon'
+          />
+          <h4>Contact me</h4>
+        </div>
+        <ContactLinks />
       </div>
-      <div className='form__container'>
+      <div className='contact__right'>
         {displayForm ? (
           <ContactForm submitted={handleFormSubmit} />
         ) : (
-          <p className='submit-message'>
-            Thankyou, I'll get back to you shortly.
-          </p>
+          <div className='submit-container'>
+            <p className='submit-message'>
+              Thank you, I'll get back to you shortly.
+            </p>
+            {/* <button onClick={() => scrollTo('#top')}>Back to top &uarr;</button> */}
+          </div>
         )}
-
-        <SocialLinks />
       </div>
     </div>
   );

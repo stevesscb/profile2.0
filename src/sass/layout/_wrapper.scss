@@ -20,7 +20,9 @@
 
   display: grid;
   grid-template-rows:
-    [nav-start] 12rem [nav-end header-start] 90vh [header-end] var(--spacing)
+    [nav-start] min-content [nav-end header-start] 90vh [header-end] var(
+      --spacing
+    )
     [about-start] minmax(min-content, max-content) [about-end] var(--spacing)
     [projects-start] minmax(min-content, max-content) [projects-end] var(
       --spacing
@@ -36,6 +38,6 @@
       [projects-start] minmax(min-content, max-content) [projects-end] var(
         --spacing
       )
-      [contact-start] min-content [contact-end];
+      [contact-start] minmax(min-content, 90vh) [contact-end];
   }
 }
