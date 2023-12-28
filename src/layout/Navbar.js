@@ -18,8 +18,12 @@ function Navbar() {
       </div>
       <div className='navigation__button'>
         <span
-          className={'navigation__icon ' + `${openMenu ? 'checked' : null}`}
+          role='button'
+          tabIndex={0}
+          aria-label='Open mobile navigation'
+          className={`navigation__icon + ${openMenu ? 'checked' : null}`}
           onClick={handleMenu}
+          onKeyDown={handleMenu}
         ></span>
       </div>
       <ul className={`nav ${openMenu ? 'open' : 'close'}`}>

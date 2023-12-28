@@ -78,6 +78,15 @@
       &::after {
         top: -1rem;
       }
+
+      // For button role warning *
+      &:focus {
+        outline: none !important;
+      }
+
+      &:focus-within {
+        outline: none !important;
+      }
     }
 
     .checked {
