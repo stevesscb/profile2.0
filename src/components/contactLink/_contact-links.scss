@@ -1,10 +1,12 @@
 .contact__links {
-  margin-top: 4rem;
   text-align: center;
+
+  grid-column: 2 / 3;
+  align-self: center;
 
   &--item {
     display: inline-block;
-    margin: 0 4rem;
+    margin: 0 3rem;
 
     .link:link,
     .link:visited {
