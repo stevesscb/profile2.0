@@ -16,14 +16,16 @@ function Navbar() {
         <h2>Stephen Cole Bowen</h2>
         <h3>Front end developer</h3>
       </div>
-      <div className='navigation__button'>
+      <div
+        className='navigation__button'
+        onClick={handleMenu}
+        role='button'
+        onKeyDown={handleMenu}
+        tabIndex={0}
+        aria-label='Open mobile navigation'
+      >
         <span
-          role='button'
-          tabIndex={0}
-          aria-label='Open mobile navigation'
           className={`navigation__icon + ${openMenu ? 'checked' : null}`}
-          onClick={handleMenu}
-          onKeyDown={handleMenu}
         ></span>
       </div>
       <ul className={`nav ${openMenu ? 'open' : 'close'}`}>

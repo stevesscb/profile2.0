@@ -84,13 +84,13 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-rows: 50vh repeat(3, 10vh); }
-  @media only screen and (min-width: 93.75em) {
+  grid-template-rows: minmax(min-content, 65vh) repeat(3, min-content); }
+  @media only screen and (max-width: 46.875em) {
     .header {
-      grid-template-rows: 65vh repeat(3, 8vh); } }
+      grid-template-rows: minmax(min-content, 50vh) repeat(3, min-content); } }
   @media only screen and (max-width: 31.25em) {
     .header {
-      grid-template-rows: 40vh repeat(3, 8vh); } }
+      grid-template-rows: minmax(min-content, 40vh) repeat(3, min-content); } }
   .header__title {
     z-index: 100;
     align-self: center;
@@ -128,7 +128,6 @@ body {
       text-shadow: var(--white-text-shadow); }
 
 .navbar {
-  position: relative;
   padding: 2rem 7rem;
   background-color: var(--color-secondary);
   color: var(--color-white);
@@ -155,6 +154,10 @@ body {
       .navbar__brand {
         padding-left: 2rem; } }
   .navbar .navigation__button {
+    position: relative;
+    margin-right: 2rem;
+    width: 4rem;
+    height: 5rem;
     cursor: pointer;
     display: none;
     justify-self: end;
@@ -165,28 +168,31 @@ body {
       .navbar .navigation__button {
         display: block;
         padding-right: 2rem; } }
-    .navbar .navigation__button .navigation__icon {
-      position: relative; }
-      .navbar .navigation__button .navigation__icon, .navbar .navigation__button .navigation__icon::before, .navbar .navigation__button .navigation__icon::after {
-        display: inline-block;
-        height: 2px;
-        width: 4rem;
-        background-color: var(--color-white); }
-      .navbar .navigation__button .navigation__icon::before, .navbar .navigation__button .navigation__icon::after {
-        content: '';
-        position: absolute;
-        transition: all 0.2s; }
-      .navbar .navigation__button .navigation__icon::before {
-        top: -2rem; }
-      .navbar .navigation__button .navigation__icon::after {
-        top: -1rem; }
+    .navbar .navigation__button .navigation__icon, .navbar .navigation__button .navigation__icon::before, .navbar .navigation__button .navigation__icon::after {
+      display: inline-block;
+      height: 2px;
+      width: 4rem;
+      background-color: var(--color-white);
+      position: absolute;
+      bottom: 50%; }
+    .navbar .navigation__button .navigation__icon::before, .navbar .navigation__button .navigation__icon::after {
+      content: '';
+      transition: all 0.2s; }
+    .navbar .navigation__button .navigation__icon::before {
+      bottom: 1rem; }
+    .navbar .navigation__button .navigation__icon::after {
+      bottom: -1rem; }
+    .navbar .navigation__button .navigation__icon:focus {
+      outline: none !important; }
+    .navbar .navigation__button .navigation__icon:focus-within {
+      outline: none !important; }
     .navbar .navigation__button .checked {
       background-color: transparent; }
     .navbar .navigation__button .checked::before {
-      top: -1rem;
+      bottom: 0rem;
       transform: rotate(135deg); }
     .navbar .navigation__button .checked::after {
-      top: -1rem;
+      bottom: 0rem;
       transform: rotate(-135deg); }
   .navbar .nav {
     list-style: none;
@@ -236,7 +242,7 @@ body {
   padding-right: 1rem;
   padding-left: 1rem;
   display: grid;
-  grid-template-rows: [nav-start] min-content [nav-end header-start] 90vh [header-end] var(--spacing) [about-start] minmax(min-content, max-content) [about-end] var(--spacing) [projects-start] minmax(min-content, max-content) [projects-end] var(--spacing) [contact-start] minmax(min-content, 90vh) [contact-end]; }
+  grid-template-rows: [nav-start] min-content [nav-end header-start] min-content [header-end] var(--spacing) [about-start] minmax(min-content, max-content) [about-end] var(--spacing) [projects-start] minmax(min-content, max-content) [projects-end] var(--spacing) [contact-start] minmax(min-content, 90vh) [contact-end]; }
   @media only screen and (max-width: 68.75em) {
     .wrapper {
       max-width: 90vw; } }
@@ -390,12 +396,13 @@ body {
 
 .header__scrolling {
   border-top: 1px solid var(--color-secondary);
-  border-bottom: 1px solid var(--color-secondary);
   padding: 1rem;
   width: 100%;
   white-space: nowrap;
   margin: auto 0;
   overflow: hidden; }
+  .header__scrolling:last-child {
+    border-bottom: 1px solid var(--color-secondary); }
   .header__scrolling--content {
     display: inline-block;
     font-family: var(--font-content-secondary);
