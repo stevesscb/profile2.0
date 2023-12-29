@@ -1,11 +1,14 @@
 .header__scrolling {
   border-top: 1px solid var(--color-secondary);
-  border-bottom: 1px solid var(--color-secondary);
   padding: 1rem;
   width: 100%;
   white-space: nowrap;
   margin: auto 0;
   overflow: hidden;
+
+  &:last-child {
+    border-bottom: 1px solid var(--color-secondary);
+  }
 
   &--content {
     display: inline-block;

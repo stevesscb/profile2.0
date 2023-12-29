@@ -20,7 +20,7 @@
 
   display: grid;
   grid-template-rows:
-    [nav-start] min-content [nav-end header-start] 90vh [header-end] var(
+    [nav-start] min-content [nav-end header-start] min-content [header-end] var(
       --spacing
     )
     [about-start] minmax(min-content, max-content) [about-end] var(--spacing)
