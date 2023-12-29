@@ -74,6 +74,10 @@ body {
   font-family: var(--font-content);
   color: var(--color-secondary);
   font-weight: 400; }
+  @media only screen and (max-width: 31.25em) {
+    body {
+      background: none;
+      background-color: var(--color-white); } }
 
 .header {
   position: relative;
