@@ -36,6 +36,7 @@ function Portfolio() {
           alt='Jobs In Cyber image'
           title='Jobs In Cyber'
           description='This task was to give an existing web application a revamp carrying out bug fixes, implementing new features and building new designs. It was great to be a part of such a collaborative process.'
+          url='https://uat.jobsincyber.com/candidate/listings'
         />
 
         <Card
