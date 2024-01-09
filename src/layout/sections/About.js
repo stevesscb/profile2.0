@@ -15,21 +15,20 @@ function About() {
             Steve,
           </div>
           <p>
-            A front end developer - I bring ideas to life by building designs
-            with the clear vision of handing over a final product that startups
-            and business's can proudly stand behind.
+            I'm a front end developer - I help bring ideas to life by building
+            designs that clients can proudly stand behind.
           </p>
           <p>
-            Although my main experience lies in code, I have a strong interest
-            in design and love learning more in this space.
+            I value clean code - less is more! I love learning new technologies
+            and expanding my skill-set. I'm constantly spending my time
+            researching for more efficient and updated methods.
           </p>
           <p>
-            I value clean code - less is more! I also love learning new
-            technologies and expanding my skill set, spending time researching
-            for more efficient and updated methods.
+            While my main experience lies in code, I also have a strong interest
+            in design.
           </p>
           <p>
-            If you like what you hear and you think we could collaborate please
+            If you like what you hear and think we could collaborate please
             <button
               onClick={() => scrollTo('.contact')}
               className='about__left--link'
