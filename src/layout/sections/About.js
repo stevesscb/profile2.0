@@ -19,9 +19,9 @@ function About() {
             designs that clients can proudly stand behind.
           </p>
           <p>
-            I value clean code - less is more! I love learning new technologies
-            and expanding my skill-set. I'm constantly spending my time
-            researching for more efficient and updated methods.
+            I enjoy learning new technologies and expanding my skill-set. I'm
+            constantly spending my time researching for more efficient and
+            updated methods.
           </p>
           <p>
             While my main experience lies in code, I also have a strong interest
