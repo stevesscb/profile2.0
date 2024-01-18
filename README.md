@@ -7,5 +7,5 @@
 **Deployment**
 
 1. Compile, Concatenate add prefixes and compress scss files with "npm run build:css"
-2. "run npm run build"
+2. "npm run build"
 3. merge into main branch will be deployed on vercel.
