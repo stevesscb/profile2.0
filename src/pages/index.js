@@ -4,7 +4,7 @@ import { StrictMode } from 'react';
 import Wrapper from '../layout/Wrapper';
 
 import Navbar from '../layout/Navbar';
-import Header from '../layout/Header';
+import Hero from '../layout/Hero';
 import About from '../layout/sections/About';
 import Projects from '../layout/sections/Projects';
 import Contact from '../layout/sections/Contact';
@@ -13,8 +13,9 @@ import '../css/style.css';
 
 export const Head = () => (
   <>
+    <html lang='en' />
     <meta
-      name='Stephen Cole Bowen'
+      name='description'
       content='Front end development / Web development professional portfolio'
     />
     <title>Stephen Cole Bowen</title>
@@ -36,13 +37,9 @@ const IndexPage = () => {
     <StrictMode>
       <Wrapper>
         <Navbar />
-
-        <Header />
-
+        <Hero />
         <About />
-
         <Projects />
-
         <Contact />
       </Wrapper>
     </StrictMode>

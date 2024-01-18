@@ -9,7 +9,7 @@ function About() {
     <>
       <div className='about'>
         <div className='about__left'>
-          <h3>About me</h3>
+          <h2>About me</h2>
           <div className='about__left--standout-text'>
             <span className='about__left--emoticon'>✌️</span> Hi there! I'm
             Steve,
@@ -38,9 +38,7 @@ function About() {
           </p>
         </div>
         <div className='about__right'>
-          <h3 className='heading text-center'>
-            Perfecting the build process with, but not limited to...
-          </h3>
+          <h3>Perfecting the build process with, but not limited to...</h3>
           <Icons />
         </div>
       </div>

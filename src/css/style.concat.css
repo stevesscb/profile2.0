@@ -69,7 +69,7 @@ html {
       font-size: 50%; } }
 
 body {
-  background: linear-gradient(rgba(var(--color-light-1-rgba), 0.4), rgba(var(--color-light-1-rgba), 0.4)), url(../images/main-background.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(var(--color-light-1-rgba), 0.5), rgba(var(--color-light-1-rgba), 0.5)), url(../images/main-background2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -81,52 +81,6 @@ body {
     body {
       background: none;
       background-color: var(--color-white); } }
-
-.header {
-  position: relative;
-  font-family: var(--font-heading);
-  text-transform: uppercase;
-  overflow: hidden;
-  padding: 2rem 0;
-  grid-row: 2 / 3;
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-rows: minmax(min-content, 65vh) repeat(3, min-content); }
-  .header__title {
-    z-index: 100;
-    align-self: center;
-    overflow: hidden;
-    background: linear-gradient(rgba(var(--color-light-1-rgba), 0), rgba(var(--color-light-1-rgba), 0)), url(../images/header-background.jpg) no-repeat center center;
-    background-size: cover;
-    height: 100%; }
-    .header__title span:first-child {
-      margin: 0 2rem;
-      font-size: var(--font-regular-large);
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      column-gap: 1rem;
-      align-items: center; }
-      .header__title span:first-child::before, .header__title span:first-child::after {
-        content: '';
-        display: block;
-        height: 1rem;
-        background-color: var(--color-secondary); }
-    .header__title span:not(:first-child) {
-      font-weight: 900;
-      font-size: 14rem; }
-      @media only screen and (min-width: 93.75em) {
-        .header__title span:not(:first-child) {
-          font-size: 18rem; } }
-      @media only screen and (max-width: 46.875em) {
-        .header__title span:not(:first-child) {
-          font-size: 12rem; } }
-      @media only screen and (max-width: 31.25em) {
-        .header__title span:not(:first-child) {
-          font-size: 10rem; } }
-    .header__title span {
-      display: block;
-      line-height: 1;
-      text-shadow: var(--white-text-shadow); }
 
 .navbar {
   padding: 2rem 7rem;
@@ -147,9 +101,9 @@ body {
     grid-column: 1 / 2;
     align-self: end;
     justify-self: start; }
-    .navbar__brand h2 {
+    .navbar__brand h1 {
       font-size: var(--font-larger); }
-    .navbar__brand h3 {
+    .navbar__brand .description {
       font-size: var(--font-regular); }
     @media only screen and (max-width: 56.25em) {
       .navbar__brand {
@@ -236,6 +190,52 @@ body {
         transform: translateY(2rem);
         opacity: 100%; } }
 
+.hero {
+  position: relative;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 2rem 0;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: minmax(min-content, 65vh) repeat(3, min-content); }
+  .hero__title {
+    z-index: 100;
+    align-self: center;
+    overflow: hidden;
+    background: url(../images/header-background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%; }
+    .hero__title span:first-child {
+      margin: 0 2rem;
+      font-size: var(--font-regular-large);
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      column-gap: 1rem;
+      align-items: center; }
+      .hero__title span:first-child::before, .hero__title span:first-child::after {
+        content: '';
+        display: block;
+        height: 1rem;
+        background-color: var(--color-secondary); }
+    .hero__title span:not(:first-child) {
+      font-weight: 900;
+      font-size: 14rem; }
+      @media only screen and (min-width: 93.75em) {
+        .hero__title span:not(:first-child) {
+          font-size: 18rem; } }
+      @media only screen and (max-width: 46.875em) {
+        .hero__title span:not(:first-child) {
+          font-size: 12rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .hero__title span:not(:first-child) {
+          font-size: 10rem; } }
+    .hero__title span {
+      display: block;
+      line-height: 1;
+      text-shadow: var(--white-text-shadow); }
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -273,7 +273,7 @@ body {
     font-size: var(--font-regular);
     line-height: 1.4;
     color: var(--color-white); }
-    .about__left h3 {
+    .about__left h2 {
       font-size: 6rem;
       font-family: var(--font-heading);
       margin-bottom: 4rem; }
@@ -307,10 +307,11 @@ body {
   .about__right {
     padding: 4rem;
     background-color: var(--color-white); }
-    .about__right .heading {
+    .about__right h3 {
       font-family: var(--font-heading);
       font-weight: 700;
-      font-size: 6rem; }
+      font-size: 6rem;
+      text-align: center; }
 
 .contact {
   background: var(--color-primary);
@@ -327,7 +328,7 @@ body {
   .contact__left {
     align-self: center;
     text-align: center; }
-    .contact__left--heading {
+    .contact__left h2 {
       font-size: 6rem;
       text-transform: uppercase;
       font-family: var(--font-heading);
@@ -359,14 +360,14 @@ body {
     color: var(--color-white);
     font-family: var(--font-content-secondary);
     font-weight: 300; }
-    .projects__header h4 {
+    .projects__header h3 {
       font-size: 12rem;
       letter-spacing: 0.5rem;
       font-weight: inherit;
       color: transparent;
       -webkit-text-stroke-width: 1.8px;
       -webkit-text-stroke-color: var(--color-light-1); }
-    .projects__header h5 {
+    .projects__header h2 {
       margin: 0 2rem;
       padding-bottom: 1rem;
       font-size: var(--font-regular);
@@ -377,7 +378,7 @@ body {
       grid-template-columns: 1fr max-content 1fr;
       column-gap: 1rem;
       align-items: center; }
-      .projects__header h5::before, .projects__header h5::after {
+      .projects__header h2::before, .projects__header h2::after {
         content: '';
         display: block;
         height: 2px;
@@ -395,32 +396,32 @@ body {
         grid-template-columns: auto;
         padding: 2rem; } }
 
-.header__scrolling {
+.hero__scrolling {
   border-top: 1px solid var(--color-secondary);
   padding: 1rem;
   width: 100%;
   white-space: nowrap;
   margin: auto 0;
   overflow: hidden; }
-  .header__scrolling:last-child {
+  .hero__scrolling:last-child {
     border-bottom: 1px solid var(--color-secondary); }
-  .header__scrolling--content {
+  .hero__scrolling--content {
     display: inline-block;
     font-family: var(--font-content-secondary);
     font-size: 6rem; }
 
-.header__scrolling--content .icon {
+.hero__scrolling--content .icon {
   margin: 0 1rem; }
 
-.header__scrolling--content-1 {
+.hero__scrolling--content-1 {
   color: transparent;
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: var(--color-secondary);
   animation: animate_text-1 30s linear infinite; }
 
-.header__scrolling--content-2 {
+.hero__scrolling--content-2 {
   animation: animate_text-2 30s linear infinite; }
-  .header__scrolling--content-2 .icon {
+  .hero__scrolling--content-2 .icon {
     color: var(--color-primary); }
 
 .card {
@@ -430,7 +431,8 @@ body {
   border-radius: 15px;
   border: none;
   color: var(--color-white);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 0.5s ease; }
   .card__img {
     width: auto;
     height: 60rem; }
@@ -471,6 +473,8 @@ body {
         color: var(--color-bright); }
         .card__cta--link:hover::after, .card__cta--link:active::after, .card__cta:link:hover::after, .card__cta:link:active::after, .card__cta:visited:hover::after, .card__cta:visited:active::after {
           content: ' \2192'; }
+  .card:hover {
+    transform: scale(1.02); }
   .card:hover .card__caption--title {
     background-color: var(--color-primary); }
   .card:hover .card__caption {

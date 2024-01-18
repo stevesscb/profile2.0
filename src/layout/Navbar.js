@@ -12,10 +12,10 @@ function Navbar() {
 
   return (
     <div className='navbar'>
-      <div className='navbar__brand'>
-        <h2>Stephen Cole Bowen</h2>
-        <h3>Front end developer</h3>
-      </div>
+      <header className='navbar__brand'>
+        <h1>Stephen Cole Bowen</h1>
+        <p className='description'>Front end developer</p>
+      </header>
       <div
         className='navigation__button'
         onClick={handleMenu}

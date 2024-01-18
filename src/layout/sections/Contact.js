@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useState } from 'react';
-// import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import ContactForm from '../../components/form/ContactForm';
 import ContactLinks from '../../components/contactLink/Contact-links';
@@ -24,7 +23,7 @@ function Contact() {
             alt='Contact icon'
             className='contact__left--icon'
           />
-          <h4>Contact me</h4>
+          <h2>Contact me</h2>
         </div>
         <ContactLinks />
       </div>
@@ -36,7 +35,6 @@ function Contact() {
             <p className='submit-message'>
               Thank you, I'll get back to you shortly.
             </p>
-            {/* <button onClick={() => scrollTo('#top')}>Back to top &uarr;</button> */}
           </div>
         )}
       </div>

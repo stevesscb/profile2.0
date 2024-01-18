@@ -1,4 +1,4 @@
-.header {
+.hero {
   position: relative;
   font-family: var(--font-heading);
   text-transform: uppercase;
@@ -17,11 +17,7 @@
     align-self: center;
     overflow: hidden;
 
-    background: linear-gradient(
-        rgba(var(--color-light-1-rgba), 0),
-        rgba(var(--color-light-1-rgba), 0)
-      ),
-      url(../images/header-background.jpg) no-repeat center center;
+    background: url(../images/header-background.jpg) no-repeat center center;
     background-size: cover;
     height: 100%;
 

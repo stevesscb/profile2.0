@@ -18,7 +18,7 @@
     line-height: 1.4;
     color: var(--color-white);
 
-    h3 {
+    h2 {
       font-size: 6rem;
       font-family: var(--font-heading);
       margin-bottom: 4rem;
@@ -67,10 +67,11 @@
     padding: 4rem;
     background-color: var(--color-white);
 
-    .heading {
+    h3 {
       font-family: var(--font-heading);
       font-weight: 700;
       font-size: 6rem;
+      text-align: center;
     }
   }
 }

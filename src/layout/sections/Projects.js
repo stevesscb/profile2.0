@@ -14,8 +14,8 @@ function Portfolio() {
   return (
     <div className='projects'>
       <div className='projects__header text-center'>
-        <h4>My Work</h4>
-        <h5>Projects</h5>
+        <h3>My Work</h3>
+        <h2>Projects</h2>
       </div>
       <div className='projects__cards'>
         <Card

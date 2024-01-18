@@ -18,7 +18,7 @@
     align-self: center;
     text-align: center;
 
-    &--heading {
+    h2 {
       font-size: 6rem;
       text-transform: uppercase;
       font-family: var(--font-heading);
@@ -48,19 +48,6 @@
     .submit-container {
       font-size: var(--font-larger);
       text-align: center;
-
-      // button {
-      //   margin-top: 4rem;
-      //   border: none;
-      //   background: none;
-      //   font-size: var(--font-regular);
-      //   cursor: pointer;
-      //   transition: all 0.2s ease;
-
-      //   &:hover {
-      //     color: var(--color-white);
-      //   }
-      // }
     }
   }
 }
