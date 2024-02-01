@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useRef } from 'react';
 
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 import Button from '../button/Button';
 import Input from './Input';
@@ -56,23 +56,22 @@ function ContactForm({ submitted }) {
     } else {
       submitted();
       // Send form data
-      // TODO Uncomment this code before production
-      // emailjs
-      //   .sendForm(
-      //     'service_hngouyh',
-      //     'template_0ibridr',
-      //     form.current,
-      //     'RJbHKRxlmAf_iEb4D'
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log(result.text);
-      //       console.log('form submitted');
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
+      emailjs
+        .sendForm(
+          'service_hngouyh',
+          'template_0ibridr',
+          form.current,
+          'RJbHKRxlmAf_iEb4D'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log('form submitted');
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
 
