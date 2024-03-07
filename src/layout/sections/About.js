@@ -16,12 +16,9 @@ function About() {
           </div>
           <p>
             I'm a front end developer - I help bring ideas to life by building
-            designs that clients can proudly stand behind.
-          </p>
-          <p>
-            I enjoy learning new technologies and expanding my skill-set. I'm
-            constantly spending my time researching for more efficient and
-            updated methods.
+            designs that clients can proudly stand behind. I enjoy learning new
+            technologies and expanding my skill-set. I'm constantly spending my
+            time researching for more efficient and updated methods.
           </p>
           <p>
             While my main experience lies in code, I also have a strong interest
@@ -38,7 +35,7 @@ function About() {
           </p>
         </div>
         <div className='about__right'>
-          <h3>Perfecting the build process with, but not limited to...</h3>
+          {/* <h3>Perfecting the build process with, but not limited to...</h3> */}
           <Icons />
         </div>
       </div>
