@@ -14,11 +14,8 @@ import '../css/style.css';
 export const Head = () => (
   <>
     <html lang='en' />
-    <meta
-      name='description'
-      content='Front end development / Web development professional portfolio'
-    />
-    <title>Stephen Cole Bowen</title>
+    <meta name='description' content='Template site' />
+    <title>Name goes here</title>
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link
       rel='preconnect'

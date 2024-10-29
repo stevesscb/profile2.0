@@ -13,8 +13,8 @@ function Navbar() {
   return (
     <div className='navbar'>
       <header className='navbar__brand'>
-        <h1>Stephen Cole Bowen</h1>
-        <p className='description'>Front end developer</p>
+        <h1>Your name goes here</h1>
+        <p className='description'>description</p>
       </header>
       <div
         className='navigation__button'

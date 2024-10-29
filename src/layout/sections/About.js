@@ -15,17 +15,18 @@ function About() {
             Steve,
           </div>
           <p>
-            I'm a front end developer - I help bring ideas to life by building
-            designs that clients can proudly stand behind. I enjoy learning new
-            technologies and expanding my skill-set. I'm constantly spending my
-            time researching for more efficient and updated methods.
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book.
           </p>
           <p>
-            While my main experience lies in code, I also have a strong interest
-            in design.
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s.
           </p>
           <p>
-            If you like what you hear and think we could collaborate please
+            simply dummy text of the printing and typesetting industry. Ipsum
             <button
               onClick={() => scrollTo('.contact')}
               className='about__left--link'
@@ -35,7 +36,6 @@ function About() {
           </p>
         </div>
         <div className='about__right'>
-          {/* <h3>Perfecting the build process with, but not limited to...</h3> */}
           <Icons />
         </div>
       </div>
