@@ -8,6 +8,7 @@ export default function HTML(props) {
         <meta charSet='utf-8' />
         <meta httpEquiv='x-ua-compatible' content='ie=edge' />
         <meta name='viewport' content='width=device-width' />
+        <meta name='robots' content='noindex' />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

@@ -12,7 +12,7 @@ function About() {
           <h2>About me</h2>
           <div className='about__left--standout-text'>
             <span className='about__left--emoticon'>✌️</span> Hi there! I'm
-            Steve,
+            "name"
           </div>
           <p>
             simply dummy text of the printing and typesetting industry. Lorem
